@@ -1,0 +1,1 @@
+This is a small project to simply create the standard Google Search page. It does not have much/any functionality, this is just for learning CSS/HTML.
