@@ -13,6 +13,10 @@
             aspect-ratio: auto 272 / 92;
             width: 272px;
         }
+        a {
+            text-decoration: none;
+            color: black;
+        }
         .top_links {
             display: flex;
             padding: 5px;
@@ -30,18 +34,19 @@
             margin-left: 15px;
         }
         .center {
-            display:block;
+            display:flex;
             margin: 0 auto 0;
         }
         .searchfield {
             background: #fff;
-            display: flex;
             border-radius: 24px;
             border: 1px solid #dfe1e5;
             box-shadow: none;
             height: 44px;
             margin: 0 auto;
             width: 482px;
+            font-size: 20px;
+            color: gray;
         }
     </style>
     <body>
@@ -55,11 +60,9 @@
             <li><a class=right_links" href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/&ec=GAZAmgQ">Sign In</a></li>
         </ul>
         <div class="content">
-            <img class="center" alt="Google" src="Google_Logo.png" 
-            style="padding-top: 109px; width:272;">
+            <img class="center" alt="Google" src="Google_Logo.png" style="padding-top:109px; padding-left:50px; width:272px;">
         
-            <input class="center searchfield" maxlength="2048" name="q" 
-            title="search" style="margin-top: 20px;">
+            <input class="center searchfield" maxlength="2048" name="q" title="search" style="margin-top: 20px; padding-left: 10px;" value="Search">
         </div>
     </body>
 </html>
