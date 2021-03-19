@@ -4,17 +4,30 @@
         <title>Google</title>
     </head>
     <style>
+        body {
+            font-size: 14px;
+            font-family: arial,sans-serif;
+        }
         img {
             height: 92px;
             aspect-ratio: auto 272 / 92;
             width: 272px;
         }
+        .top_links {
+            display: flex;
+            padding: 5px;
+            margin: 0 5px;
+            color: #222;
+            list-style-type: none;
+        }
+        .left_links {
+            float: left;
+        }
+        .right_links {
+            float: right;
+        }
         a:first-of-type {
             margin-left: 15px;
-        }
-        .heading {
-            display: inline-block;
-
         }
         .center {
             display:block;
@@ -32,18 +45,21 @@
         }
     </style>
     <body>
-        <div class="heading">
-            <a href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">About</a>
-            <a href="https://store.google.com/US?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">Store</a>
-            <a href="https://mail.google.com/mail/?authuser=0&ogbl">Gmail</a>
-            <a href="https://www.google.com/imghp?hl=en&authuser=0&ogbl">Images</a>
-        </div>
+        <ul class="top_links left_links">
+            <li><a class="left_links" href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">About</a></li>
+            <li><a class="left_links" href="https://store.google.com/US?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">Store</a></li>
+        </ul>
+        <ul class="top_links right_links">
+            <li><a class="right_links" href="https://mail.google.com/mail/?authuser=0&ogbl">Gmail</a></li>
+            <li><a class="right_links" href="https://www.google.com/imghp?hl=en&authuser=0&ogbl">Images</a></li>
+            <li><a class=right_links" href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/&ec=GAZAmgQ">Sign In</a></li>
+        </ul>
         <div class="content">
             <img class="center" alt="Google" src="Google_Logo.png" 
             style="padding-top: 109px; width:272;">
         
             <input class="center searchfield" maxlength="2048" name="q" 
             title="search" style="margin-top: 20px;">
-    </div>
+        </div>
     </body>
 </html>
