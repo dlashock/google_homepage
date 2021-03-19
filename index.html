@@ -75,7 +75,14 @@
             text-align: center;
             cursor: pointer;
             user-select: none;
-            display: flex;
+        }
+        .search_button_left {
+            float: left;
+            margin: 30px 0 0 150px;
+        }
+        .search_button_right {
+            float: right;
+            margin: 30px 150px 0 0;
         }
         .footer {
             position: fixed;
@@ -105,8 +112,8 @@
             <img class="center" alt="Google" src="Google_Logo.png" style="width:272px;">
         
             <input class="center searchfield" maxlength="2048" name="q" title="search" style="margin-top: 20px; padding-left: 10px;" value="Search">
-            <input class="center search_button" type="button" value="Google Search">
-            <input class="center search_button" type="button" value="I'm Feeling Lucky">
+            <input class="center search_button search_button_left" type="button" value="Google Search">
+            <input class="center search_button search_button_right" type="button" value="I'm Feeling Lucky">
         </div>
 
 
