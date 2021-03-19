@@ -17,12 +17,16 @@
             text-decoration: none;
             color: black;
         }
+        ul {
+            list-style-type: none;
+        }
         .top_links {
             display: flex;
             padding: 5px;
             margin: 0 5px;
             color: #222;
-            list-style-type: none;
+            line-height: 24px;
+            vertical-align: middle;
         }
         .left_links {
             float: left;
@@ -44,21 +48,39 @@
             box-shadow: none;
             height: 44px;
             margin: 0 auto;
-            width: 482px;
+            width: 575px;
             font-size: 20px;
             color: gray;
         }
+        .search_button {
+            background-color: #f8f9fa;
+            border: 1px solid #f8f9fa;
+            border-radius: 4px;
+            color: #3c4043;
+            font-family: arial,sans-serif;
+            font-size: 14px;
+            margin: 11px 4px;
+            padding: 0 16px;
+            line-height: 27px;
+            height: 36px;
+            min-width: 54px;
+            text-align: center;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+        }
         .footer {
             position: fixed;
-            display: flex;
             left: 0;
             bottom: 0;
             width: 100%;
             background-color: #f2f2f2;
             color: white;
             text-align: center;
+            padding: 15px 30px;
         }
     </style>
+
     <body>
         <ul class="top_links left_links">
             <li><a class="left_links" href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">About</a></li>
@@ -69,21 +91,27 @@
             <li><a class="right_links" href="https://www.google.com/imghp?hl=en&authuser=0&ogbl">Images</a></li>
             <li><a class="right_links" href="https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/&ec=GAZAmgQ">Sign In</a></li>
         </ul>
+
+
         <div class="content">
-            <img class="center" alt="Google" src="Google_Logo.png" style="padding-top:109px; padding-left:50px; width:272px;">
+            <img class="center" alt="Google" src="Google_Logo.png" style="padding-top:200px; padding-left:50px; width:272px;">
         
             <input class="center searchfield" maxlength="2048" name="q" title="search" style="margin-top: 20px; padding-left: 10px;" value="Search">
+            <input class="center search_button" type="button" value="Google Search" style="float: left; margin: 25px 0 0 500px;">
+            <input class="center search_button" type="button" value="I'm Feeling Lucky" style="float: right; margin: 25px 500px 0 0;">
         </div>
+
+
         <div class="footer">
             <ul>
-                <li><a href="https://www.google.com/intl/en_us/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a></li>
-                <li><a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a></li>
-                <li><a href="https://google.com/search/howsearchworks/?fg=1">How Search Works</a></li>
+                <li><a class="left_links" href="https://www.google.com/intl/en_us/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a></li>
+                <li><a class="left_links" href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a></li>
+                <li><a class="left_links" href="https://google.com/search/howsearchworks/?fg=1">How Search Works</a></li>
             </ul>
             <ul>
-                <li><a href="https://policies.google.com/privacy?hl=en&fg=1">Privacy</a></li>
-                <li><a href="https://policies.google.com/terms?hl=en&fg=1">Terms</a></li>
-                <li><a href="/">Settings</a></li>
+                <li><a class="right_links" href="https://policies.google.com/privacy?hl=en&fg=1">Privacy</a></li>
+                <li><a class="right_links" href="https://policies.google.com/terms?hl=en&fg=1">Terms</a></li>
+                <li><a class="right_links" href="/">Settings</a></li>
             </ul>
         </div>
     </body>
