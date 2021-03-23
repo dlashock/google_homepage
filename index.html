@@ -13,12 +13,11 @@
             aspect-ratio: auto 272 / 92;
             width: 272px;
         }
-        a {
-            text-decoration: none;
-            color: black;
-        }
         ul {
             list-style-type: none;
+        }
+        a {
+            text-decoration: none;
         }
         .top_links {
             display: flex;
@@ -28,13 +27,17 @@
             line-height: 24px;
             vertical-align: middle;
         }
+        a.left_links, a.right_links {
+            text-decoration: none;
+            color: black;
+        }
         .left_links {
             float: left;
         }
         .right_links {
             float: right;
         }
-        a:first-of-type {
+        a.left_links:first-of-type, a.right_links:first-of-type {
             margin-left: 15px;
         }
         .center {
@@ -88,10 +91,22 @@
             position:absolute;
             left: 0;
             bottom: 0;
-            width: 96.8%;
+            width: 98.4%;
             background-color: #f2f2f2;
             text-align: center;
-            padding: 15px 30px;
+            padding: 10px;
+            display: block;
+        }
+        .bottom_left_links {
+            float: left;
+            color: #70757a;
+        }
+        .bottom_right_links {
+            float: right;
+            color: #70757a;
+        }
+        a.bottom_left_links:first-of-type, a.bottom_right_links:first-of-type {
+            margin-left: 15px;
         }
     </style>
 
@@ -118,14 +133,14 @@
 
         <div class="footer">
             <ul>
-                <li><a class="left_links" href="https://www.google.com/intl/en_us/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a></li>
-                <li><a class="left_links" href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a></li>
-                <li><a class="left_links" href="https://google.com/search/howsearchworks/?fg=1">How Search Works</a></li>
+                <li><a class="bottom_left_links" href="https://www.google.com/intl/en_us/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a></li>
+                <li><a class="bottom_left_links" href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a></li>
+                <li><a class="bottom_left_links" href="https://google.com/search/howsearchworks/?fg=1">How Search Works</a></li>
             </ul>
             <ul>
-                <li><a class="right_links" href="https://policies.google.com/privacy?hl=en&fg=1">Privacy</a></li>
-                <li><a class="right_links" href="https://policies.google.com/terms?hl=en&fg=1">Terms</a></li>
-                <li><a class="right_links" href="/">Settings</a></li>
+                <li><a class="bottom_right_links" href="https://policies.google.com/privacy?hl=en&fg=1">Privacy</a></li>
+                <li><a class="bottom_right_links" href="https://policies.google.com/terms?hl=en&fg=1">Terms</a></li>
+                <li><a class="bottom_right_links" href="/">Settings</a></li>
             </ul>
         </div>
     </body>
